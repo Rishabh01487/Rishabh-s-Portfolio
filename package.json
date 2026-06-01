@@ -1,0 +1,13 @@
+{
+  "name": "rishabh-portfolio",
+  "version": "1.0.0",
+  "description": "Rishabh Gupta — AI & ML Engineer Portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000"
+  },
+  "keywords": ["portfolio", "ai", "ml", "engineer"],
+  "author": "Rishabh Gupta",
+  "license": "MIT"
+}
