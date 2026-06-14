@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "npx serve . -p 3000",
-    "start": "npx serve . -p 3000"
+    "start": "npx serve . -p 3000",
+    "build": "exit 0"
   },
   "keywords": ["portfolio", "ai", "ml", "engineer"],
   "author": "Rishabh Gupta",
