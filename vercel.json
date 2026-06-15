@@ -2,6 +2,7 @@
   "version": 2,
   "framework": null,
   "buildCommand": "exit 0",
+  "outputDirectory": ".",
   "routes": [
     {
       "src": "/(.*)",
