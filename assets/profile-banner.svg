@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a0dc"/>
+      <stop offset="35%" stop-color="#967bb6"/>
+      <stop offset="70%" stop-color="#7b68ee"/>
+      <stop offset="100%" stop-color="#6a5acd"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" rx="16" fill="url(#bg)"/>
+  <text x="400" y="85" text-anchor="middle" font-family="Georgia, serif" font-size="36" font-weight="bold" fill="#fff" letter-spacing="1">Rishabh Gupta</text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.9)">Full-Stack Developer · AI & Social Impact · Building for Bharat</text>
+  <text x="400" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-style="italic" fill="rgba(255,255,255,0.7)">"Driven by curiosity and desire to solve complex societal challenges"</text>
+</svg>
