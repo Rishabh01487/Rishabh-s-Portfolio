@@ -543,6 +543,27 @@ nav{
 .contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:2rem}
 @media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
 .contact-info{padding:2rem;display:flex;flex-direction:column;gap:0.8rem}
+
+/* ── CERTIFICATES ── */
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem}
+.cert-card{padding:1.6rem;display:flex;flex-direction:column;gap:0.8rem}
+.cert-icon-row{display:flex;align-items:center;gap:14px}
+.cert-ico{
+  width:48px;height:48px;border-radius:12px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:1.25rem;
+  border:1px solid var(--eff2);background:var(--eff);
+}
+.cert-name{font-weight:700;color:var(--dark);font-size:0.95rem;font-family:"Clash Display",sans-serif;line-height:1.3}
+.cert-issuer{font-size:0.75rem;color:var(--blue);font-weight:600;margin-top:2px}
+.cert-desc{font-size:0.8rem;color:var(--muted);line-height:1.55;flex:1}
+.cert-link{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:0.75rem;font-weight:600;text-decoration:none;
+  padding:6px 14px;border-radius:50px;
+  transition:all 0.2s;color:var(--blue);background:var(--blue5);border:1px solid var(--blue4);
+  align-self:flex-start;
+}
+.cert-link:hover{background:var(--blue4);transform:translateY(-1px)}
 .ci-row{
   display:flex;align-items:center;gap:14px;
   padding:0.9rem 1rem;border-radius:12px;
@@ -660,6 +681,7 @@ footer{
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
       <a href="#contact">Contact</a>
     </div>
     <button class="theme-toggle" id="themeToggle" aria-label="Switch theme" title="Switch theme">
@@ -873,6 +895,56 @@ footer{
   </div>
 </section>
 
+<!-- ═══ CERTIFICATES ═══ -->
+<section id="certificates" class="section-alt">
+  <div class="section-wrap">
+    <div class="sec-header reveal">
+      <div class="sec-tag">Achievements</div>
+      <h2 class="sec-title">Certificates</h2>
+      <p class="sec-desc">Continuous learning — verified credentials from industry leaders</p>
+    </div>
+    <div class="cert-grid">
+
+      <div class="card cert-card reveal" data-delay="1">
+        <div class="cert-icon-row">
+          <div class="cert-ico" style="background:#EFF6FF;border-color:#DBEAFE;color:var(--blue)">🏆</div>
+          <div>
+            <div class="cert-name">IBM Skills Network — DB0101EN</div>
+            <div class="cert-issuer">Cognitive Class · IBM</div>
+          </div>
+        </div>
+        <div class="cert-desc">Completed the IBM database fundamentals course covering SQL, data modeling, and relational database management on Cloud.</div>
+        <a href="assets/cert-ibm-db0101en.pdf" target="_blank" class="cert-link">📄 View Certificate</a>
+      </div>
+
+      <div class="card cert-card reveal" data-delay="2">
+        <div class="cert-icon-row">
+          <div class="cert-ico" style="background:#f0fdf4;border-color:#bbf7d0;color:#059669">🚀</div>
+          <div>
+            <div class="cert-name">Voyager Blitz Certificate</div>
+            <div class="cert-issuer">Voyager Blitz · Hackathon</div>
+          </div>
+        </div>
+        <div class="cert-desc">Recognized for participation and performance in the Voyager Blitz tech event, building innovative solutions under time constraints.</div>
+        <a href="assets/cert-voyager-blitz.pdf" target="_blank" class="cert-link">📄 View Certificate</a>
+      </div>
+
+      <div class="card cert-card reveal" data-delay="3">
+        <div class="cert-icon-row">
+          <div class="cert-ico" style="background:#fff7ed;border-color:#ffedd5;color:#ea580c">📜</div>
+          <div>
+            <div class="cert-name">Professional Certificate</div>
+            <div class="cert-issuer">Verified Credential</div>
+          </div>
+        </div>
+        <div class="cert-desc">Completed professional certification demonstrating technical proficiency and hands-on project experience.</div>
+        <a href="assets/cert-professional.pdf" target="_blank" class="cert-link">📄 View Certificate</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ═══ CONTACT ═══ -->
 <section id="contact" class="section-alt">
   <div class="section-wrap">
@@ -902,7 +974,7 @@ footer{
 <footer>
   <div class="foot-links">
     <a href="#hero">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
-    <a href="#projects">Projects</a><a href="#contact">Contact</a>
+    <a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
   </div>
   <p class="foot-copy">© 2026 Rishabh Gupta · <strong>Curiosity &gt;&gt;&gt; Fear</strong></p>
 </footer>
@@ -995,13 +1067,12 @@ runTw();
 const skills=[
   {n:"Python",i:"🐍",l:90},{n:"JavaScript",i:"⚡",l:85},{n:"React",i:"⚛️",l:85},
   {n:"Next.js",i:"▲",l:85},{n:"Node.js",i:"🟢",l:80},{n:"MongoDB",i:"🍃",l:80},
-  {n:"Machine Learning",i:"🤖",l:85},{n:"Deep Learning",i:"🧠",l:80},
+  {n:"Machine Learning",i:"🤖",l:85},
   {n:"C++",i:"🔧",l:75},{n:"SQL",i:"🗄️",l:80},{n:"HTML/CSS",i:"🎨",l:90},
   {n:"Git",i:"📦",l:85},{n:"Docker",i:"🐳",l:70},{n:"TypeScript",i:"📘",l:80},
   {n:"Model Fine-Tuning (GGUF)",i:"⚙️",l:70},{n:"Google Colab",i:"📓",l:80},{n:"GitHub",i:"🐙",l:90},
-  {n:"GitHub Actions (CI/CD)",i:"🔄",l:75},{n:"REST API",i:"🔗",l:90},{n:"JWT",i:"🔐",l:85},
-  {n:"System Design",i:"🏗️",l:80},{n:"OOP",i:"🧩",l:85},{n:"OS",i:"🖥️",l:78},
-  {n:"Blockchain",i:"⛓️",l:75}
+  {n:"GitHub Actions (CI/CD)",i:"🔄",l:75},{n:"REST API",i:"🔗",l:90},
+  {n:"System Design",i:"🏗️",l:80},{n:"OOP",i:"🧩",l:85}
 ];
 const sg=document.getElementById("sg");
 skills.forEach((s,i)=>{
